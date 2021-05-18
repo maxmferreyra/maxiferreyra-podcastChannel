@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Podcast Channel</title>
 </head>
 
@@ -31,10 +29,9 @@
             <h1>Hello <span class="world">world</span> pale blue dot<span class="dot">.</span>
             </h1>
             <p class="podcast">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <button class="btn first-button">CONOCÉ MÁS</button>
+            <button class="btn first-button"><a href="#episode">CONOCÉ MÁS</a></button>
         </div>
-        <section class="chapters-container rectangle">
-            <a name="episode"></a>
+        <section id="episode" class="chapters-container rectangle">
             <h2 class="second-title">Episodios</h2>
             <div class="episode-box">
                 <iframe class="episode" src="https://open.spotify.com/embed-podcast/show/6DxHVg6CAOzwHnLgQClrs7" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -43,8 +40,7 @@
                 <iframe class="episode" src="https://open.spotify.com/embed-podcast/episode/7tiqdLNgmxnv4vweFLK2NE" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </section>
-        <section class="text-container">
-            <a name="about"></a>
+        <section id="about" class="text-container">
             <div>
                 <img class="img-phone" src="./src/assets/img/phone.png" alt="phone">
             </div>
@@ -54,18 +50,18 @@
                 <p class="second-text">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
             </div>
         </section>
-        <section class="guest">
-            <a name="interviews"></a>
+        <section id="interviews" class="guest">
             <h2>Invitadas/os estelares</h2>
-            <img src="./src/assets/img/grace-hopper.png" alt="imagen de grace-hopper">
-            <img src="./src/assets/img/Katie-Bouman.png" alt="imagen de Katie-Bouman">
-            <img src="./src/assets/img/Margaret_Hamilton.png" alt="imagen de Margaret_Hamilton">
-            <img src="./src/assets/img/An E.R.A.Univac 1103 computer in the 1950s.png" alt="imagen de An">
-            <img src="./src/assets/img/maxi.png" alt="imagen de maxi">
-            <img src="./src/assets/img/susan-kare.png" alt="imagen de susan-kare">
+            <div class="container-img">
+                <img src="./src/assets/img/grace-hopper.png" alt="imagen de grace-hopper">
+                <img src="./src/assets/img/Katie-Bouman.png" alt="imagen de Katie-Bouman">
+                <img src="./src/assets/img/Margaret_Hamilton.png" alt="imagen de Margaret_Hamilton">
+                <img src="./src/assets/img/An E.R.A.Univac 1103 computer in the 1950s.png" alt="imagen de An">
+                <img src="./src/assets/img/maxi.png" alt="imagen de maxi">
+                <img src="./src/assets/img/susan-kare.png" alt="imagen de susan-kare">
+            </div>
         </section>
-        <section class="themes">
-            <a name="topics"></a>
+        <section id="topics" class="themes">
             <h2>Algunos de nuestros temas</h2>
             <div class="theme-box">
                 <div class="theme-container">
@@ -90,18 +86,17 @@
             <h2>¿Querés las últimas novedades?</h2>
             <button class="btn second-btn">ESCUCHÁ LOS EPISODIOS</button>
         </section>
-        <footer class="copyright">
-            <p>© 2019— Hello blue pale dot</p>
-            <div class="social-icons">
-                <i class="fab fa-spotify"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-telegram"></i>
-            </div>
-        </footer>
-
     </main>
+    <footer class="copyright">
+        <p>© 2019— Hello blue pale dot</p>
+        <div class="social-icons">
+            <i class="fab fa-spotify"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
+    </footer>
 </body>
 
 </html>
