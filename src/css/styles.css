@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
-/* Normalice */
+/* Normalize */
 
 * {
     margin: 0;
@@ -48,7 +48,7 @@ label {
     display: block;
     cursor: pointer;
     margin-top: 9px;
-    left: 69px;
+    left: 25px;
 }
 
 .icon-menu {
@@ -77,6 +77,7 @@ label {
 }
 
 .menu-nav {
+    max-width: 400px;
     background-color: #0000ff;
     height: 0px;
     margin-top: 30px;
@@ -89,6 +90,28 @@ label {
 
 .check {
     display: none;
+}
+
+.check:checked ~ .menu-nav {
+    transform: translateX(0%);
+    height: 156px;
+    width: 100%;
+}
+
+.check:checked ~ label > div {
+    transform: translateY(10px) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.check:checked ~ label > div::before {
+    transform: translateY(-5px) rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.check:checked ~ label > div::after {
+    opacity: 0;
+    transform: translateY(-10px) rotate(90deg);
+    transition: all 0.3s ease-in-out;
 }
 
 .check:checked~.menu-nav {
@@ -310,9 +333,13 @@ p.second-text {
     justify-content: space-between;
     align-items: center;
 }
+.social-icons a {
+    color: black;
+}
 
 .social-icons i:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 
@@ -364,6 +391,9 @@ p.second-text {
     .list-item:hover {
         background: #7de9d0;
         text-decoration: line-through;
+    }
+    .list-item a:active {
+    text-decoration: line-through;
     }
     .rectangle {
         padding: 70px 0px 150px 0px;

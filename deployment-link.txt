@@ -1,3 +1,2 @@
 DEPLOYMENT LINK
 
-https://github.com/maxmferreyra/maxiferreyra-podcastChannel
